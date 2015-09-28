@@ -4,7 +4,7 @@
 #
 Name     : automake
 Version  : 1.15
-Release  : 11
+Release  : 12
 URL      : http://mirrors.kernel.org/gnu/automake/automake-1.15.tar.xz
 Source0  : http://mirrors.kernel.org/gnu/automake/automake-1.15.tar.xz
 Summary  : No detailed summary available
