@@ -1,0 +1,9 @@
+Configure miss: lex
+Configure miss: sh5
+Configure miss: dash
+Configure miss: ash
+Configure miss: zsh
+Configure miss: ksh
+Configure miss: pdksh
+Configure miss: whether /usr/bin/sh corrupts stderr with "set -x"
+Configure miss: x86_64-generic-linux-gnu-gcj
