@@ -6,7 +6,7 @@
 #
 Name     : automake
 Version  : 1.15.1
-Release  : 18
+Release  : 19
 URL      : http://mirrors.kernel.org/gnu/automake/automake-1.15.1.tar.xz
 Source0  : http://mirrors.kernel.org/gnu/automake/automake-1.15.1.tar.xz
 Source99 : http://mirrors.kernel.org/gnu/automake/automake-1.15.1.tar.xz.sig
