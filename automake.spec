@@ -6,7 +6,7 @@
 #
 Name     : automake
 Version  : 1.15.1
-Release  : 19
+Release  : 20
 URL      : http://mirrors.kernel.org/gnu/automake/automake-1.15.1.tar.xz
 Source0  : http://mirrors.kernel.org/gnu/automake/automake-1.15.1.tar.xz
 Source99 : http://mirrors.kernel.org/gnu/automake/automake-1.15.1.tar.xz.sig
@@ -17,7 +17,16 @@ Requires: automake-bin
 Requires: automake-data
 Requires: automake-doc
 BuildRequires : bison
+BuildRequires : cscope
+BuildRequires : ctags
+BuildRequires : dejagnu
+BuildRequires : docutils
+BuildRequires : emacs
+BuildRequires : expect
 BuildRequires : flex
+BuildRequires : help2man
+BuildRequires : makedepend
+BuildRequires : texinfo
 
 %description
 This is Automake, a Makefile generator.  It aims to be portable and
@@ -68,19 +77,19 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1498238743
+export SOURCE_DATE_EPOCH=1523288645
 %configure --disable-static
-make V=1  %{?_smp_mflags}
+make  %{?_smp_mflags}
 
 %check
 export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-make VERBOSE=1 V=1 %{?_smp_mflags} check
+make VERBOSE=1 V=1 %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1498238743
+export SOURCE_DATE_EPOCH=1523288645
 rm -rf %{buildroot}
 %make_install
 

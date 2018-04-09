@@ -7,3 +7,33 @@ Configure miss: ksh
 Configure miss: pdksh
 Configure miss: whether /usr/bin/sh corrupts stderr with "set -x"
 Configure miss: x86_64-generic-linux-gnu-gcj
+Configure miss: whether the Objective C compiler works
+Configure miss: whether the Objective C compiler works
+Configure miss: whether the Objective C compiler works
+Configure miss: x86_64-generic-linux-gnu-objc++
+Configure miss: x86_64-generic-linux-gnu-objcxx
+Configure miss: x86_64-generic-linux-gnu-CXX
+Configure miss: whether the Objective C++ compiler works
+Configure miss: x86_64-generic-linux-gnu-objc++
+Configure miss: x86_64-generic-linux-gnu-objcxx
+Configure miss: x86_64-generic-linux-gnu-CXX
+Configure miss: whether the Objective C++ compiler works
+Configure miss: x86_64-generic-linux-gnu-objc++
+Configure miss: x86_64-generic-linux-gnu-objcxx
+Configure miss: x86_64-generic-linux-gnu-CXX
+Configure miss: whether the Objective C++ compiler works
+Configure miss: x86_64-generic-linux-gnu-objc++
+Configure miss: x86_64-generic-linux-gnu-objcxx
+Configure miss: x86_64-generic-linux-gnu-CXX
+Configure miss: whether we are using the GNU Objective C++ compiler
+Configure miss: whether g++ accepts -g
+Configure miss: whether the Objective C compiler really works
+Configure miss: whether the Objective C++ compiler really works
+Configure miss: x86_64-generic-linux-gnu-upcc
+Configure miss: x86_64-generic-linux-gnu-upc
+Configure miss: upcc
+Configure miss: upc
+Configure miss: x86_64-generic-linux-gnu-upcc
+Configure miss: x86_64-generic-linux-gnu-upc
+Configure miss: upcc
+Configure miss: upc
