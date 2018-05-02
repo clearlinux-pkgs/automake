@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x0ADEE10094604D37 (mthl@gnu.org)
 #
 Name     : automake
-Version  : 1.15.1
-Release  : 20
-URL      : http://mirrors.kernel.org/gnu/automake/automake-1.15.1.tar.xz
-Source0  : http://mirrors.kernel.org/gnu/automake/automake-1.15.1.tar.xz
-Source99 : http://mirrors.kernel.org/gnu/automake/automake-1.15.1.tar.xz.sig
+Version  : 1.16.1
+Release  : 21
+URL      : http://mirrors.kernel.org/gnu/automake/automake-1.16.1.tar.xz
+Source0  : http://mirrors.kernel.org/gnu/automake/automake-1.16.1.tar.xz
+Source99 : http://mirrors.kernel.org/gnu/automake/automake-1.16.1.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
@@ -70,14 +70,14 @@ doc components for the automake package.
 
 
 %prep
-%setup -q -n automake-1.15.1
+%setup -q -n automake-1.16.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523288645
+export SOURCE_DATE_EPOCH=1525279622
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -89,7 +89,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1523288645
+export SOURCE_DATE_EPOCH=1525279622
 rm -rf %{buildroot}
 %make_install
 
@@ -99,90 +99,90 @@ rm -rf %{buildroot}
 %files bin
 %defattr(-,root,root,-)
 /usr/bin/aclocal
-/usr/bin/aclocal-1.15
+/usr/bin/aclocal-1.16
 /usr/bin/automake
-/usr/bin/automake-1.15
+/usr/bin/automake-1.16
 
 %files data
 %defattr(-,root,root,-)
-/usr/share/aclocal-1.15/internal/ac-config-macro-dirs.m4
+/usr/share/aclocal-1.16/internal/ac-config-macro-dirs.m4
 /usr/share/aclocal/README
-/usr/share/automake-1.15/Automake/ChannelDefs.pm
-/usr/share/automake-1.15/Automake/Channels.pm
-/usr/share/automake-1.15/Automake/Condition.pm
-/usr/share/automake-1.15/Automake/Config.pm
-/usr/share/automake-1.15/Automake/Configure_ac.pm
-/usr/share/automake-1.15/Automake/DisjConditions.pm
-/usr/share/automake-1.15/Automake/FileUtils.pm
-/usr/share/automake-1.15/Automake/General.pm
-/usr/share/automake-1.15/Automake/Getopt.pm
-/usr/share/automake-1.15/Automake/Item.pm
-/usr/share/automake-1.15/Automake/ItemDef.pm
-/usr/share/automake-1.15/Automake/Language.pm
-/usr/share/automake-1.15/Automake/Location.pm
-/usr/share/automake-1.15/Automake/Options.pm
-/usr/share/automake-1.15/Automake/Rule.pm
-/usr/share/automake-1.15/Automake/RuleDef.pm
-/usr/share/automake-1.15/Automake/VarDef.pm
-/usr/share/automake-1.15/Automake/Variable.pm
-/usr/share/automake-1.15/Automake/Version.pm
-/usr/share/automake-1.15/Automake/Wrap.pm
-/usr/share/automake-1.15/Automake/XFile.pm
-/usr/share/automake-1.15/COPYING
-/usr/share/automake-1.15/INSTALL
-/usr/share/automake-1.15/am/check.am
-/usr/share/automake-1.15/am/check2.am
-/usr/share/automake-1.15/am/clean-hdr.am
-/usr/share/automake-1.15/am/clean.am
-/usr/share/automake-1.15/am/compile.am
-/usr/share/automake-1.15/am/configure.am
-/usr/share/automake-1.15/am/data.am
-/usr/share/automake-1.15/am/dejagnu.am
-/usr/share/automake-1.15/am/depend.am
-/usr/share/automake-1.15/am/depend2.am
-/usr/share/automake-1.15/am/distdir.am
-/usr/share/automake-1.15/am/footer.am
-/usr/share/automake-1.15/am/header-vars.am
-/usr/share/automake-1.15/am/header.am
-/usr/share/automake-1.15/am/inst-vars.am
-/usr/share/automake-1.15/am/install.am
-/usr/share/automake-1.15/am/java.am
-/usr/share/automake-1.15/am/lang-compile.am
-/usr/share/automake-1.15/am/lex.am
-/usr/share/automake-1.15/am/library.am
-/usr/share/automake-1.15/am/libs.am
-/usr/share/automake-1.15/am/libtool.am
-/usr/share/automake-1.15/am/lisp.am
-/usr/share/automake-1.15/am/ltlib.am
-/usr/share/automake-1.15/am/ltlibrary.am
-/usr/share/automake-1.15/am/mans-vars.am
-/usr/share/automake-1.15/am/mans.am
-/usr/share/automake-1.15/am/program.am
-/usr/share/automake-1.15/am/progs.am
-/usr/share/automake-1.15/am/python.am
-/usr/share/automake-1.15/am/remake-hdr.am
-/usr/share/automake-1.15/am/scripts.am
-/usr/share/automake-1.15/am/subdirs.am
-/usr/share/automake-1.15/am/tags.am
-/usr/share/automake-1.15/am/texi-vers.am
-/usr/share/automake-1.15/am/texibuild.am
-/usr/share/automake-1.15/am/texinfos.am
-/usr/share/automake-1.15/am/vala.am
-/usr/share/automake-1.15/am/yacc.am
-/usr/share/automake-1.15/ar-lib
-/usr/share/automake-1.15/compile
-/usr/share/automake-1.15/config.guess
-/usr/share/automake-1.15/config.sub
-/usr/share/automake-1.15/depcomp
-/usr/share/automake-1.15/install-sh
-/usr/share/automake-1.15/mdate-sh
-/usr/share/automake-1.15/missing
-/usr/share/automake-1.15/mkinstalldirs
-/usr/share/automake-1.15/py-compile
-/usr/share/automake-1.15/tap-driver.sh
-/usr/share/automake-1.15/test-driver
-/usr/share/automake-1.15/texinfo.tex
-/usr/share/automake-1.15/ylwrap
+/usr/share/automake-1.16/Automake/ChannelDefs.pm
+/usr/share/automake-1.16/Automake/Channels.pm
+/usr/share/automake-1.16/Automake/Condition.pm
+/usr/share/automake-1.16/Automake/Config.pm
+/usr/share/automake-1.16/Automake/Configure_ac.pm
+/usr/share/automake-1.16/Automake/DisjConditions.pm
+/usr/share/automake-1.16/Automake/FileUtils.pm
+/usr/share/automake-1.16/Automake/General.pm
+/usr/share/automake-1.16/Automake/Getopt.pm
+/usr/share/automake-1.16/Automake/Item.pm
+/usr/share/automake-1.16/Automake/ItemDef.pm
+/usr/share/automake-1.16/Automake/Language.pm
+/usr/share/automake-1.16/Automake/Location.pm
+/usr/share/automake-1.16/Automake/Options.pm
+/usr/share/automake-1.16/Automake/Rule.pm
+/usr/share/automake-1.16/Automake/RuleDef.pm
+/usr/share/automake-1.16/Automake/VarDef.pm
+/usr/share/automake-1.16/Automake/Variable.pm
+/usr/share/automake-1.16/Automake/Version.pm
+/usr/share/automake-1.16/Automake/Wrap.pm
+/usr/share/automake-1.16/Automake/XFile.pm
+/usr/share/automake-1.16/COPYING
+/usr/share/automake-1.16/INSTALL
+/usr/share/automake-1.16/am/check.am
+/usr/share/automake-1.16/am/check2.am
+/usr/share/automake-1.16/am/clean-hdr.am
+/usr/share/automake-1.16/am/clean.am
+/usr/share/automake-1.16/am/compile.am
+/usr/share/automake-1.16/am/configure.am
+/usr/share/automake-1.16/am/data.am
+/usr/share/automake-1.16/am/dejagnu.am
+/usr/share/automake-1.16/am/depend.am
+/usr/share/automake-1.16/am/depend2.am
+/usr/share/automake-1.16/am/distdir.am
+/usr/share/automake-1.16/am/footer.am
+/usr/share/automake-1.16/am/header-vars.am
+/usr/share/automake-1.16/am/header.am
+/usr/share/automake-1.16/am/inst-vars.am
+/usr/share/automake-1.16/am/install.am
+/usr/share/automake-1.16/am/java.am
+/usr/share/automake-1.16/am/lang-compile.am
+/usr/share/automake-1.16/am/lex.am
+/usr/share/automake-1.16/am/library.am
+/usr/share/automake-1.16/am/libs.am
+/usr/share/automake-1.16/am/libtool.am
+/usr/share/automake-1.16/am/lisp.am
+/usr/share/automake-1.16/am/ltlib.am
+/usr/share/automake-1.16/am/ltlibrary.am
+/usr/share/automake-1.16/am/mans-vars.am
+/usr/share/automake-1.16/am/mans.am
+/usr/share/automake-1.16/am/program.am
+/usr/share/automake-1.16/am/progs.am
+/usr/share/automake-1.16/am/python.am
+/usr/share/automake-1.16/am/remake-hdr.am
+/usr/share/automake-1.16/am/scripts.am
+/usr/share/automake-1.16/am/subdirs.am
+/usr/share/automake-1.16/am/tags.am
+/usr/share/automake-1.16/am/texi-vers.am
+/usr/share/automake-1.16/am/texibuild.am
+/usr/share/automake-1.16/am/texinfos.am
+/usr/share/automake-1.16/am/vala.am
+/usr/share/automake-1.16/am/yacc.am
+/usr/share/automake-1.16/ar-lib
+/usr/share/automake-1.16/compile
+/usr/share/automake-1.16/config.guess
+/usr/share/automake-1.16/config.sub
+/usr/share/automake-1.16/depcomp
+/usr/share/automake-1.16/install-sh
+/usr/share/automake-1.16/mdate-sh
+/usr/share/automake-1.16/missing
+/usr/share/automake-1.16/mkinstalldirs
+/usr/share/automake-1.16/py-compile
+/usr/share/automake-1.16/tap-driver.sh
+/usr/share/automake-1.16/test-driver
+/usr/share/automake-1.16/texinfo.tex
+/usr/share/automake-1.16/ylwrap
 
 %files dev
 %defattr(-,root,root,-)
