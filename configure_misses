@@ -6,44 +6,11 @@ Configure miss: zsh
 Configure miss: ksh
 Configure miss: pdksh
 Configure miss: whether /usr/bin/sh corrupts stderr with "set -x"
+Configure miss: g++ option to enable C++11 features
+Configure miss: x86_64-generic-linux-gnu-armflang
+Configure miss: x86_64-generic-linux-gnu-flang
+Configure miss: x86_64-generic-linux-gnu-armflang
+Configure miss: x86_64-generic-linux-gnu-flang
+Configure miss: armflang
+Configure miss: flang
 Configure miss: x86_64-generic-linux-gnu-gcj
-Configure miss: whether the Objective C compiler works
-Configure miss: whether the Objective C compiler works
-Configure miss: whether the Objective C compiler works
-Configure miss: x86_64-generic-linux-gnu-objc++
-Configure miss: x86_64-generic-linux-gnu-objcxx
-Configure miss: x86_64-generic-linux-gnu-CXX
-Configure miss: whether the Objective C++ compiler works
-Configure miss: x86_64-generic-linux-gnu-objc++
-Configure miss: x86_64-generic-linux-gnu-objcxx
-Configure miss: x86_64-generic-linux-gnu-CXX
-Configure miss: whether the Objective C++ compiler works
-Configure miss: x86_64-generic-linux-gnu-objc++
-Configure miss: x86_64-generic-linux-gnu-objcxx
-Configure miss: x86_64-generic-linux-gnu-CXX
-Configure miss: whether the Objective C++ compiler works
-Configure miss: x86_64-generic-linux-gnu-objc++
-Configure miss: x86_64-generic-linux-gnu-objcxx
-Configure miss: x86_64-generic-linux-gnu-CXX
-Configure miss: whether we are using the GNU Objective C++ compiler
-Configure miss: whether g++ accepts -g
-Configure miss: whether the Objective C compiler really works
-Configure miss: whether the Objective C++ compiler really works
-Configure miss: x86_64-generic-linux-gnu-upcc
-Configure miss: x86_64-generic-linux-gnu-upc
-Configure miss: upcc
-Configure miss: upc
-Configure miss: x86_64-generic-linux-gnu-upcc
-Configure miss: x86_64-generic-linux-gnu-upc
-Configure miss: upcc
-Configure miss: upc
-Configure miss: gobject-2.0 >= 2.4
-Configure miss: gobject-2.0 >= 2.4
-Configure miss: gobject-2.0 >= 2.4
-Configure miss: gobject-2.0 >= 2.4
-Configure miss: gobject-2.0 >= 2.4
-Configure miss: gobject-2.0 >= 2.4
-Configure miss: gobject-2.0 >= 2.4
-Configure miss: gobject-2.0 >= 2.4
-Configure miss: gobject-2.0 >= 2.4
-Configure miss: gobject-2.0 >= 2.4
