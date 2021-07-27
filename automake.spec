@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x7FD9FCCB000BEEEE (meyering@fb.com)
 #
 Name     : automake
-Version  : 1.16.3
-Release  : 26
-URL      : https://mirrors.kernel.org/gnu/automake/automake-1.16.3.tar.xz
-Source0  : https://mirrors.kernel.org/gnu/automake/automake-1.16.3.tar.xz
-Source1  : https://mirrors.kernel.org/gnu/automake/automake-1.16.3.tar.xz.sig
+Version  : 1.16.4
+Release  : 27
+URL      : https://mirrors.kernel.org/gnu/automake/automake-1.16.4.tar.xz
+Source0  : https://mirrors.kernel.org/gnu/automake/automake-1.16.4.tar.xz
+Source1  : https://mirrors.kernel.org/gnu/automake/automake-1.16.4.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
@@ -96,23 +96,23 @@ man components for the automake package.
 
 
 %prep
-%setup -q -n automake-1.16.3
-cd %{_builddir}/automake-1.16.3
+%setup -q -n automake-1.16.4
+cd %{_builddir}/automake-1.16.4
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1605803835
+export SOURCE_DATE_EPOCH=1627350649
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -124,11 +124,11 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1605803835
+export SOURCE_DATE_EPOCH=1627350649
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/automake
-cp %{_builddir}/automake-1.16.3/COPYING %{buildroot}/usr/share/package-licenses/automake/06877624ea5c77efe3b7e39b0f909eda6e25a4ec
-cp %{_builddir}/automake-1.16.3/lib/COPYING %{buildroot}/usr/share/package-licenses/automake/31a3d460bb3c7d98845187c716a30db81c44b615
+cp %{_builddir}/automake-1.16.4/COPYING %{buildroot}/usr/share/package-licenses/automake/06877624ea5c77efe3b7e39b0f909eda6e25a4ec
+cp %{_builddir}/automake-1.16.4/lib/COPYING %{buildroot}/usr/share/package-licenses/automake/31a3d460bb3c7d98845187c716a30db81c44b615
 %make_install
 
 %files

@@ -1,16 +1,16 @@
-Configure miss: lex
-Configure miss: sh5
-Configure miss: dash
-Configure miss: ash
-Configure miss: zsh
-Configure miss: ksh
-Configure miss: pdksh
-Configure miss: whether /usr/bin/sh corrupts stderr with "set -x"
-Configure miss: g++ option to enable C++11 features
-Configure miss: x86_64-generic-linux-gnu-armflang
-Configure miss: x86_64-generic-linux-gnu-flang
-Configure miss: x86_64-generic-linux-gnu-armflang
-Configure miss: x86_64-generic-linux-gnu-flang
 Configure miss: armflang
+Configure miss: ash
+Configure miss: dash
 Configure miss: flang
+Configure miss: g++ option to enable C++11 features
+Configure miss: ksh
+Configure miss: lex
+Configure miss: pdksh
+Configure miss: sh5
+Configure miss: whether /usr/bin/sh corrupts stderr with "set -x"
+Configure miss: x86_64-generic-linux-gnu-armflang
+Configure miss: x86_64-generic-linux-gnu-armflang
+Configure miss: x86_64-generic-linux-gnu-flang
+Configure miss: x86_64-generic-linux-gnu-flang
 Configure miss: x86_64-generic-linux-gnu-gcj
+Configure miss: zsh
