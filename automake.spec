@@ -6,7 +6,7 @@
 #
 Name     : automake
 Version  : 1.16.5
-Release  : 28
+Release  : 29
 URL      : https://mirrors.kernel.org/gnu/automake/automake-1.16.5.tar.xz
 Source0  : https://mirrors.kernel.org/gnu/automake/automake-1.16.5.tar.xz
 Source1  : https://mirrors.kernel.org/gnu/automake/automake-1.16.5.tar.xz.sig
@@ -21,10 +21,10 @@ Requires: automake-man = %{version}-%{release}
 BuildRequires : bison
 BuildRequires : cscope
 BuildRequires : ctags
-BuildRequires : docutils
 BuildRequires : expect
 BuildRequires : flex
 BuildRequires : gfortran
+BuildRequires : pypi-docutils
 
 %description
 This is Automake, a Makefile generator.  It aims to be portable and
@@ -104,7 +104,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1633366927
+export SOURCE_DATE_EPOCH=1649965445
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -124,7 +124,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1633366927
+export SOURCE_DATE_EPOCH=1649965445
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/automake
 cp %{_builddir}/automake-1.16.5/COPYING %{buildroot}/usr/share/package-licenses/automake/06877624ea5c77efe3b7e39b0f909eda6e25a4ec

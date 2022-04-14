@@ -10,6 +10,7 @@ chrpath
 clr-systemd-config
 compat-curl-gnutls-soname4
 compat-fuse-soname2
+compat-gdal-soname27
 curl
 dbus-glib
 e2fsprogs
@@ -18,7 +19,6 @@ fakeroot
 fcgi
 filesystem
 fontconfig
-gdal
 gpredict
 gtk+
 hplip
@@ -34,14 +34,11 @@ libindicator
 lightdm
 lsscsi
 man-db
-minicom
-nfs-utils
 open-vm-tools
 openconnect
 os-autoinst
 patch
 pixman
-polkit
 powertop
 rpm
 rrdtool
@@ -50,7 +47,6 @@ shadow
 slurm
 sqlite-autoconf
 tar
-tesseract
 thin-provisioning-tools
 weechat
 xastir
