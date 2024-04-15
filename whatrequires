@@ -1,7 +1,6 @@
 # This file contains recursive sources that require this package
 Judy
 Linux-PAM
-bash-completion
 chrpath
 clr-systemd-config
 compat-fuse-soname2
@@ -13,7 +12,6 @@ i3lock
 kyotocabinet
 libappindicator
 libev
-libgd
 libgsystem
 libindicator
 lsscsi
